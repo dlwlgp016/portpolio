@@ -1,0 +1,1042 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <link rel="stylesheet" href="../common/css/common.css">
+    <!--[if lt IE 9]>
+    <script src="common/js/respond.src.js"></script>
+    <![endif]-->
+    <script src="../common/js/jquery-1.10.1.min.js"></script>
+    <script src="../common/js/front.js"></script>
+    <script src="../common/js/ui.js"></script>
+    <script src="../common/js/ui_002.js"></script>
+</head>
+
+<body class="body-bg">
+<!--
+    모바일 경우 : class="warp-mobile"
+    pc 경우 : class="warp-pc"
+    front.js 에서 할당 해주고 있음
+-->
+<script type="text/javascript">
+// body 클릭시 네비게이션 닫기
+$(document).ready(function(){
+    $('#box-mobile').click(function(event){
+        $('.warp-pc #gnb .wrap').show();
+        $('#gnb .btn-1').parent().next().hide();
+
+        $('#gnb').find('.btn-1').removeClass('select');
+        $('#gnb .btn-1').parents('.box-select').find('.btn-1').removeClass('select');
+    });
+});
+</script>
+
+<!-- 네비게이션 -->
+<div id="nav-mobile">
+    <!-- gnb -->
+    <div id="gnb" role="navigation" class="gnb clearfix">
+        <div class="office-info box-select">
+            <h1><a href="#none" class="btn-1"><span>광동한방병원 센터<b class="bul"></b></span></a></h1>
+            <div id="gn1" class="wrap">
+                <div>
+                    <div>
+                        <h2 class="has-sub"><a href="#none">오정 통증재활센터<b class="bul"></b></a></h2>
+                        <ul>
+                            <li><a href="#none">1</a></li>
+                            <li><a href="#none">2</a></li>
+                        </ul>
+                        <h2 class="alt has-sub"><a href="#none">오정 통증재활센터<b class="bul"></b></a></h2>
+                        <ul class="alt">
+                            <li><a href="#none">오정 진료프로세스</a></li>
+                            <li><a href="#none">오정 추천프로그램</a></li>
+                            <li><a href="#none">치료성공사례</a></li>
+                            <li><a href="#none">허리통증</a></li>
+                            <li><a href="#none">골반통증</a></li>
+                            <li><a href="#none">목통증</a></li>
+                            <li><a href="#none">턱관절통증</a></li>
+                            <li><a href="#none">어깨통증</a></li>
+                            <li><a href="#none">무릎통증</a></li>
+                            <li><a href="#none">교통사고 통증</a></li>
+                            <li><a href="#none">체형교정</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <h2 class="has-sub"><a href="#none">뇌신경기능센터<b class="bul"></b></a></h2>
+                        <ul>
+                             <li><a href="#none">1</a></li>
+                            <li><a href="#none">2</a></li>
+                        </ul>
+                        <h2 class="alt has-sub"><a href="#none">종합검진센터<b class="bul"></b></a></h2>
+                        <ul class="alt">
+                             <li><a href="#none">1</a></li>
+                            <li><a href="#none">2</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="surgery-info box-select">
+            <h1><a href="#none" class="btn-1"><span>광동한방병원 정보<b class="bul"></b></span></a></h1>
+            <div id="gn2" class="wrap">
+                <div>
+                    <div>
+                        <h2 class="has-sub"><a href="#none">상담 및 예약<b class="bul"></b></a></h2>
+                        <ul>
+                            <li><a href="#none">온라인상담</a></li>
+                            <li><a href="#none">온라인예약</a></li>
+                            <li><a href="#none">자주묻는질문</a></li>
+                            <li><a href="#none">고객의소리</a></li>
+                        </ul>
+                        <h2 class="alt has-sub"><a href="#none">치료후기<b class="bul"></b></a></h2>
+                        <ul class="alt">
+                            <li><a href="#none">1</a></li>
+                            <li><a href="#none">2</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <h2 class="has-sub"><a href="#none">이벤트/공지</a></h2>
+                        <ul>
+                            <li><a href="#none">1</a></li>
+                            <li><a href="#none">2</a></li>
+                        </ul>
+                        <h2 class="alt has-sub"><a href="#none">진료안내<b class="bul"></b></a></h2>
+                        <ul class="alt">
+                            <li><a href="#none">1</a></li>
+                            <li><a href="#none">2</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <h2 class="has-sub"><a href="#none">병원소개</a></h2>
+                        <ul>
+                            <li><a href="#none">1</a></li>
+                            <li><a href="#none">2</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //gnb -->
+</div>
+<!-- //네비게이션 -->
+
+<div id="box-mobile"><!-- id="box-mobile" 은 모바일에서만 사용 -->
+    <!-- header -->
+    <div id="header">
+        <div class="header-pc"><!-- 20131216 class="header-pc" 추가 -->
+            <!-- 20131216 유틸 이미지들 .jpg 에서 .png 로 변경 -->
+            <h1 class="h1-logo"><a href="#none"><img src="../images/logo/logo_h1.jpg" alt="광동한방병원"></a></h1>
+            <div class="utility">
+                <ul class="btn">
+                    <li><a href="#none"><img src="../images/btn/btn_login.png" alt="로그인"></a></li><!-- btn_logout.png 로그아웃 -->
+                    <li><a href="#none"><img src="../images/btn/btn_memberJoin.png" alt="회원가입"></a></li>
+                </ul>
+                <!-- 20131216 이미지에서 text로 변경 -->
+                <ul class="list">
+                    <li><a href="#none">ENGLISH</a></li>
+                    <li><a href="#none">China</a></li>
+                    <li><a href="#none">Japan</a></li>
+                    <li><a href="#none">SITE MAP</a></li>
+                    <li class="last"><a href="#none">Intranet</a></li>
+                </ul>
+                <!-- //20131216 이미지에서 text로 변경 -->
+            </div>
+            <!-- 20131216 gnb-pc -->
+            <script type="text/javascript">
+            $(document).ready(function(){
+                /* 20131216 pc 네비게이션 ssw */
+                // 1뎁스
+                $('.ul-1 .li-1 a').click(function(){
+                    var tabIndex = $(this).parent('.li-1').index(); // 메뉴 index
+                    $('.gnb-pc').find('.ul-2').hide();
+                    $('.gnb-pc').find('.ul-2').eq(tabIndex).show();
+                    $('.gnb-pc').find('.li-1').removeClass('on');
+                    $(this).parent().addClass('on');
+                });
+                // 2뎁스
+                $('.ul-2 .li-2 a').click(function(){
+                    $('.gnb-pc').find('.li-2').removeClass('on');
+                    $(this).parent().addClass('on');
+                });
+                // contents click 시 pc 네비 닫기
+                $('#contents').click(function(){
+                    $('.ul-2').hide();
+                });
+            });
+            </script>
+            <div class="gnb-pc">
+                <!-- 1뎁스 -->
+                <ul class="ul-1">
+                    <li class="li-1">
+                        <a href="#none" class="a-1" style="margin-left:256px;">오정 통증재활센터</a>
+                    </li>
+                    <li class="li-1">
+                        <a href="#none" class="a-1">오행 웰에이징센터</a>
+                    </li>
+                    <li class="li-1">
+                        <a href="#none" class="a-1">뇌신경기능센터</a>
+                    </li>
+                    <li class="li-1">
+                        <a href="#none" class="a-1">종합검진센터</a>
+                    </li>
+                    <li class="li-1">
+                        <a href="#none" class="a-1">상담 및 예약</a>
+                    </li>
+                    <li class="li-1">
+                        <a href="#none" class="a-1">치료후기</a>
+                    </li>
+                    <li class="li-1">
+                        <a href="#none" class="a-1">이벤트/공지</a>
+                    </li>
+                    <li class="li-1">
+                        <a href="#none" class="a-1">진료안내</a>
+                    </li>
+                    <li class="li-1 last">
+                        <a href="#none" class="a-1">병원소개</a>
+                    </li>
+                </ul>
+                <!-- //1뎁스 -->
+                <!-- 오정 통증재활센터 2뎁스 -->
+                <ul class="ul-2 bg-1">
+                    <li class="li-2 on">
+                        <a href="#none" class="a-2">광동한방병원</a>
+                    </li>
+                    <li class="li-2">
+                        <a href="#none" class="a-2">의료진소개</a>
+                    </li>
+                    <li class="li-2">
+                        <a href="#none" class="a-2">한약관리시스템</a>
+                    </li>
+                    <li class="li-2">
+                        <a href="#none" class="a-2">층별시설안내</a>
+                    </li>
+                    <li class="li-2">
+                        <a href="#none" class="a-2">언론 속 광동</a>
+                    </li>
+                </ul>
+                <!-- //오정 통증재활센터 2뎁스 -->
+                <!-- 오행 웰에이징센터 2뎁스 -->
+                <ul class="ul-2 bg-2">
+                    <li class="li-2 on">
+                        <a href="#none" class="a-2">1-1</a>
+                    </li>
+                    <li class="li-2">
+                        <a href="#none" class="a-2">1-2</a>
+                    </li>
+                    <li class="li-2">
+                        <a href="#none" class="a-2">1-3</a>
+                    </li>
+                    <li class="li-2">
+                        <a href="#none" class="a-2">1-4</a>
+                    </li>
+                    <li class="li-2">
+                        <a href="#none" class="a-2">1-5</a>
+                    </li>
+                </ul>
+                <!-- //오행 웰에이징센터 2뎁스 -->
+                <!-- 뇌신경기능센터 2뎁스 -->
+                <ul class="ul-2 bg-3">
+                    <li class="li-2 on">
+                        <a href="#none" class="a-2">2-1</a>
+                    </li>
+                    <li class="li-2">
+                        <a href="#none" class="a-2">2-2</a>
+                    </li>
+                    <li class="li-2">
+                        <a href="#none" class="a-2">2-3</a>
+                    </li>
+                    <li class="li-2">
+                        <a href="#none" class="a-2">2-4</a>
+                    </li>
+                    <li class="li-2">
+                        <a href="#none" class="a-2">2-5</a>
+                    </li>
+                </ul>
+                <!-- //뇌신경기능센터 2뎁스 -->
+                <!-- 종합검진센터 2뎁스 -->
+                <ul class="ul-2 bg-4">
+                    <li class="li-2 on">
+                        <a href="#none" class="a-2">3-1</a>
+                    </li>
+                    <li class="li-2">
+                        <a href="#none" class="a-2">3-2</a>
+                    </li>
+                    <li class="li-2">
+                        <a href="#none" class="a-2">3-3</a>
+                    </li>
+                    <li class="li-2">
+                        <a href="#none" class="a-2">3-4</a>
+                    </li>
+                    <li class="li-2">
+                        <a href="#none" class="a-2">3-5</a>
+                    </li>
+                </ul>
+                <!-- //종합검진센터 2뎁스 -->
+                <!-- 상담 및 예약 2뎁스 -->
+                <ul class="ul-2 bg-5">
+                    <li class="li-2 on">
+                        <a href="#none" class="a-2">4-1</a>
+                    </li>
+                    <li class="li-2">
+                        <a href="#none" class="a-2">4-2</a>
+                    </li>
+                    <li class="li-2">
+                        <a href="#none" class="a-2">4-3</a>
+                    </li>
+                    <li class="li-2">
+                        <a href="#none" class="a-2">4-4</a>
+                    </li>
+                    <li class="li-2">
+                        <a href="#none" class="a-2">4-5</a>
+                    </li>
+                </ul>
+                <!-- //상담 및 예약 2뎁스 -->
+                <!-- 치료후기 2뎁스 -->
+                <ul class="ul-2 bg-6">
+                    <li class="li-2 on">
+                        <a href="#none" class="a-2">5-1</a>
+                    </li>
+                    <li class="li-2">
+                        <a href="#none" class="a-2">5-2</a>
+                    </li>
+                    <li class="li-2">
+                        <a href="#none" class="a-2">5-3</a>
+                    </li>
+                    <li class="li-2">
+                        <a href="#none" class="a-2">5-4</a>
+                    </li>
+                    <li class="li-2">
+                        <a href="#none" class="a-2">5-5</a>
+                    </li>
+                </ul>
+                <!-- //치료후기 2뎁스 -->
+                <!-- 이벤트/공지 2뎁스 -->
+                <ul class="ul-2 bg-7">
+                    <li class="li-2 on">
+                        <a href="#none" class="a-2">6-1</a>
+                    </li>
+                    <li class="li-2">
+                        <a href="#none" class="a-2">6-2</a>
+                    </li>
+                    <li class="li-2">
+                        <a href="#none" class="a-2">6-3</a>
+                    </li>
+                    <li class="li-2">
+                        <a href="#none" class="a-2">6-4</a>
+                    </li>
+                    <li class="li-2">
+                        <a href="#none" class="a-2">6-5</a>
+                    </li>
+                </ul>
+                <!-- //이벤트/공지 2뎁스 -->
+                <!-- 진료안내 2뎁스 -->
+                <ul class="ul-2 bg-8">
+                    <li class="li-2 on">
+                        <a href="#none" class="a-2">7-1</a>
+                    </li>
+                    <li class="li-2">
+                        <a href="#none" class="a-2">7-2</a>
+                    </li>
+                    <li class="li-2">
+                        <a href="#none" class="a-2">7-3</a>
+                    </li>
+                    <li class="li-2">
+                        <a href="#none" class="a-2">7-4</a>
+                    </li>
+                    <li class="li-2">
+                        <a href="#none" class="a-2">7-5</a>
+                    </li>
+                </ul>
+                <!-- //진료안내 2뎁스 -->
+                <!-- 병원소개 2뎁스 -->
+                <ul class="ul-2 bg-9">
+                    <li class="li-2 on">
+                        <a href="#none" class="a-2">8-1</a>
+                    </li>
+                    <li class="li-2">
+                        <a href="#none" class="a-2">8-2</a>
+                    </li>
+                    <li class="li-2">
+                        <a href="#none" class="a-2">8-3</a>
+                    </li>
+                    <li class="li-2">
+                        <a href="#none" class="a-2">8-4</a>
+                    </li>
+                    <li class="li-2">
+                        <a href="#none" class="a-2">8-5</a>
+                    </li>
+                </ul>
+                <!-- //병원소개 2뎁스 -->
+            </div>
+            <!-- //20131216 gnb-pc -->
+            <!-- mobile menu -->
+            <div class="mobile-menu">
+                <a href="#none" class="btn-menu"><img src="../images/btn/btn_menu.jpg" alt="모바일 메뉴"></a>
+            </div>
+            <!-- //mobile menu -->
+        </div>
+    </div>
+    <!-- //header -->
+
+    <!-- contents -->
+    <div id="contents">
+		
+		<!-- LocalNavigation -->
+		<div class="lnb-area">
+			<h3 class="tit">오행 치료 시스템</h3>
+
+			<div class="lnb">
+				<a href="#none" class="none">HOME</a>
+				<span class="none">&#62;</span>
+				<a href="#none">오행 웰에이징센터</a>
+				<span>&#62;</span>
+				<span class="active">오행 치료 시스템</span>
+			</div>
+		</div>		
+		<!-- //LocalNavigation -->
+		
+		<!-- Content Start -->
+		<div class="inner-cont">
+			<div class="tab-wrap">
+				<!-- tab-btns -->
+				<ul class="tab-btns col4"><!-- 탭버튼 4개일때 col4, 5개 일땐 col5클래스 추가 -->
+					<li class="on onlyM-row2"><a href="#tab-con1">무월경/<span>생리불순</span></a></li><!-- 모바일에서만 2줄일때 li태그에 onlyM-row2 클래스추가, 줄바뀜 될 부분 span태그로 감싸줌. -->
+					<li><a href="#tab-con2">불임/난임</a></li>
+					<li><a href="#tab-con3">산전산후</a></li>
+					<li><a href="#tab-con4">갱년기</a></li>
+				</ul>
+				<!-- //tab-btns -->
+
+				<!-- tab-con1 -->
+				<div id="#tab-con1" class="tab-con" style="display:block;">
+					<!-- contents title -->
+					<div class="con-tit ohaeng_woman01">
+						<h4>
+							여성의 몸을 충분히 아는 <span class="orange-text">여성한의사</span>의 
+							<span class="onlyTP-block">섬세한 <span class="violet-text line">1:1 맞춤 치료</span></span>
+						</h4>
+						<p class="stit">
+							무월경이 오랫동안 지속되면 불임과 조기폐경의 가능성이 
+							<span class="onlyPC-block">높아지고 <em class="blue-text">자궁 내막암 및 유방암의 위험도 증대</em>됩니다.</span>
+						</p>
+					</div>
+					<!-- //contents title -->
+
+					<p class="first_tit"><span class="ico"><img src="../images/bul/bul_first_tit.gif" width="100%" alt="" /></span>무월경의 정의</p>
+					<p class="first_stit">무월경은 평소 월경 주기의 3배 이상의 기간 혹은 6개월 이상 월경이 없는 경우를 말합니다. 또한 사춘기 발달 지연형으로 2차 성징 발현이 늦고 14~16세까지도 월경이 없는 경우도 포함합니다.</p>
+
+					
+					<p class="first_tit pt16"><span class="ico"><img src="../images/bul/bul_first_tit.gif" width="100%" alt="" /></span>무월경의 원인</p>
+					<p class="first_stit">무월경의 원인은 매우 다양하며 최초의 원인을 찾아 치료하는 것이 중요합니다.</p>
+					<ul class="nomenses-list">
+						<li>
+							<p class="num">01</p>
+							<p class="tex"><em>선천적 자궁 이상, 자궁경관 협착,</em> 호르몬의 불균형, 심리적 스트레스 등으로 인한 원발성 요인</p>
+						</li>
+						<li>
+							<p class="num">02</p>
+							<p class="tex"><em>자궁 내막 유착, 다낭성 난서질환 (PCOS)</em> 등에 병발되어 나타나는 속발성 원인</p>
+						</li>
+						<li class="onlyT-fr">
+							<p class="num">03</p>
+							<p class="tex"><em>갑상선 기능 저하, 부신기능저하, 고프로락틴 혈증, 당뇨병,</em>
+							병적 비만 등의 전신 질환에 동반되는 경우</p>
+						</li>
+						<li class="onlyT-fr">
+							<p class="num">04</p>
+							<p class="tex"><em>기타 조기 폐경과 사춘기이전</em>의 미성숙으로 인한 지연형 무월경 등</p>
+						</li>
+					</ul>
+
+					<p class="first_tit pt16"><span class="ico"><img src="../images/bul/bul_first_tit.gif" width="100%" alt="" /></span>한의학적 관점의 무월경</p>
+					<p class="first_stit">동의보감(東醫寶鑑)에 따르면 무월경은 혈폐(血閉)와 혈고(血枯)로 대별됩니다.</p>
+					<div class="table-area">
+						<table class="register03 woman-table">
+							<colgroup>
+								<col style="width:27%;" />
+								<col />
+							</colgroup>
+							<tbody>
+								<tr>
+									<th>혈폐(血閉)</th>
+									<td>
+										<p class="ex-tit">어혈이나 습담, 기울 등에 의해서 생리가 제대로 통하지 않는 경우</p>
+										<p>자궁내막유착, 다낭성난소 증후군, 자궁경관의 협착 등의 병리적 상황과 지나친 스트레스, 병적 비만으로 인한 호르몬 불균형이 이에 속합니다.</p>
+									</td>
+								</tr>
+								<tr>
+									<th>혈고(血枯)</th>
+									<td>
+										<p class="ex-tit">진액이나 혈기 부족으로 월경이 나오지 않는 경우</p>
+										<p>사춘기의 지연형 무월경, 갱년기와 관련한 조기폐경, 산후 민 극도의 피로 상태가 누적된 혈허 무월경이 이에 속합니다.</p>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<p class="register03-txt">
+							<em class="jh-violet">무월경이 오랫동안 지속되면 불임과 조기폐경의 가능성이 높아지고 자궁 내막암 및 유방암의 위험도 증대</em>됩니다. 또한 갑상선 질환, 간, 신장 질환과 병발되는 경우라면 반드시 그 원인에 대한 치료가 필요합니다. 
+						</p>
+					</div>
+
+					<p class="first_tit pt16"><span class="ico"><img src="../images/bul/bul_first_tit.gif" width="100%" alt="" /></span>오행센터의 무월경 치료</p>
+					<table class="register03 woman-table">
+						<colgroup>
+							<col style="width:27%;" />
+							<col />
+						</colgroup>
+						<tbody>
+							<tr>
+								<th>간신부족형<br />(肝腎不足型)</th>
+								<td>
+									<p class="ex-tit">2차 성징 발달이 늦고 생기가 오지 않는 지연형 무월경 환자의 경우</p>
+									<p>보신양간(補腎養肝), 조리충임(調理衝任)하여 성호로몬 분비의 촉진과 난소 조족의 배란을 촉진시킵니다.</p>
+								</td>
+							</tr>
+							<tr>
+								<th>음허혈조형<br />(陰虛血燥型)</th>
+								<td>
+									<p class="ex-tit">갱년기 증상과 더불어 월경이 불규칙한 환자의 경우</p>
+									<p>자음익정(滋陰益精), 양혈조충(養血調衝)하여 상열감, 수족냉증, 질건조증 등의 증상을 완화하고, 불규칙 월경의 패턴을 정상화합니다.</p>
+								</td>
+							</tr>
+							<tr>
+								<th>혈어기체형<br />(血瘀氣滯型)</th>
+								<td>
+									<p class="ex-tit">자궁내막 유착증을 비롯해 어혈의 소견<span>(혀에 청자색 어반(瘀斑)이 있다. 본인이 자각하지 못하는 사이에 멍이 잘 든다. 통증이 밤에 더 심하다 등)</span>이 있는 환자의 경우</p>
+									<p>활혈화어(活血化瘀), 조리충임(調理衝任)하여 기혈을 순화합니다.</p>
+								</td>
+							</tr>
+							<tr>
+								<th>담습조체형<br />(痰濕阻滯型)</th>
+								<td>
+									<p class="ex-tit">비만에 의한 무월경 환자의 경우</p>
+									<p>활담제습(豁痰除濕), 활혈(活血), 조리충임(調理衝任)을 통해 체내 불필요한 습담을 제고하고 호르몬 분비를 정상화합니다.</p>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+
+					<p class="first_tit pt16"><span class="ico"><img src="../images/bul/bul_first_tit.gif" width="100%" alt="" /></span>오행센터의 무월경 치료 단계</p>
+					<ol class="nomenses-step">
+						<li>
+							<p class="tit">검사</p>
+							<p class="tex timl-tex4">
+								<em>기본검사 : </em>체열진단, 혈액검사(LFT, CBC/간기능, 간기능, 신기능 검사), 체지방측정
+							</p>
+							<p class="tex timl-tex4">
+								<em>추가검사 : </em>초음파(자궁), 여성호르몬검사
+							</p>
+						</li>
+						<li>
+							<p class="tit">한약</p>
+							<p class="tex timl-tex4">
+								<em>기본한약 : </em>어혈/수독(독소치료 한약), 기울(에너지순환한약), 허증 - 기혈부족(에너지를 만들어내는 지양분 부족을 돕는 한약)
+							</p>
+						</li>
+						<li class="last">
+							<p class="tit">치료</p>
+							<p class="tex">
+								<em>오행 미궁 치료 : </em>좌훈, 뜸, 순기치료, 미궁침
+							</p>
+							<p class="tex">
+								<em>오행 월궁 치료 : </em>좌훈, 뜸, 순기치료, 월궁침
+							</p>
+							<p class="tex">
+								<em>선택 치료 : </em>경근균형요법, 좌훈, 뜸, 순기요법
+							</p>
+						</li>
+					</ol>
+				</div>
+				<!-- //tab-con1 -->
+
+				<!-- tab-con2 -->
+				<div id="#tab-con2" class="tab-con">
+					<!-- contents title -->
+					<div class="con-tit ohaeng_woman02">
+						<h4>
+							<span class="orange-text">자궁을 건강하게 회복</span>시켜주는 여성의
+							<span class="onlyPC-block">몸에 꼭 맞는 <span class="violet-text line">오행치료</span>로 임신성공을...</span>
+						</h4>
+						<p class="stit">
+							한방치료는 몸의 문제가 되는 근본 원인을 치료하여
+							<span class="onlyPC-block">자궁 건강을 먼저 회복시켜 줍니다.</span><br />
+							<span class="onlyPC-block">자궁이 건강하지 못하면 <em class="blue-text">생리통, 생리불순을 심하게</em></span>
+							<span class="onlyPC-block"><em class="blue-text">겪게 되며 방치하면 불임</em>이 되기 쉽습니다.</span>
+						</p>
+					</div>
+					<!-- //contents title -->
+
+					<p class="first_tit"><span class="ico"><img src="../images/bul/bul_first_tit.gif" width="100%" alt="" /></span>불임의 정의</p>
+					<p class="first_stit">
+						<em class="jh-line jh-pink">피임을 하지 않고 정상적인 부부생활을 하는 기간이 1년이 넘었는데도 임신이 안 되는 경우</em>를 말합니다.
+					</p>
+
+					<p class="first_tit pt16"><span class="ico"><img src="../images/bul/bul_first_tit.gif" width="100%" alt="" /></span>한방에서 본 불임의 원인</p>
+					<ul class="jh-dot-list timl36">
+						<li>
+							<em class="tit">실증 : </em>
+							어혈, 습담(노폐물) - 자궁 순관과 배란이 원활하지 않음
+						</li>
+						<li>
+							<em class="tit">기울 : </em>
+							스트레스로 기순환 저체
+						</li>
+						<li>
+							<em class="tit">허웅 : </em>
+							기혈부족 〉 난소기능저하, 자궁 선천 기능 허약, 허한
+						</li>
+					</ul>
+					<div class="s-reason-box">
+						<img src="../images/ohaeng/img_wcon01.jpg" alt="여성측" />
+						<ul class="timl-list">
+							<li class="timl90">
+								- 기질적 이상 : 나팔관 유착이나 기형으로 막힘, 자궁내부에 유착이나 혹, 자궁기형
+							</li>
+							<li class="timl90">
+								- 기질적 이상 : 나팔관 유착이나 기형으로 막힘, 자궁내부에 유착이나 혹, 자궁기형
+							</li>
+						</ul>
+						<img src="../images/ohaeng/img_wcon02.jpg" alt="남성측" />
+						<ul class="timl-list">
+							<li>
+								- 정자 활동성이 약함, 정자의 숫자가 부족, 정자의 형태가 기형, 성적기능 저하
+							</li>
+							<li class="timl17 jh-pink">
+								※ 여성측 30%, 남성측 30%, 남녀모두 원인 30%, 원인 불명 10%에 의한 원인으로 분류
+							</li>
+						</ul>
+						<img src="../images/ohaeng/img_wcon03.jpg" alt="불임의 원인" class="reason-graph" />
+					</div>
+
+					<p class="first_tit pt16"><span class="ico"><img src="../images/bul/bul_first_tit.gif" width="100%" alt="" /></span>불임의 양•한방 치료</p>
+					<img src="../images/ohaeng/img_wcon04.jpg" alt="여성" />
+					<dl class="jh-dot-list">
+						<dt>한방치료</dt>
+						<dd>
+							<p>양방 치료 전에 인체의 전체적인 건강상태에서 <em class="jh-pink">호르몬장애나 배란장애를 유발하는 원인을 찾아서 그 원인을 먼저 치료</em> 해서 자연스럽게 배란이 정상을 찾도록 만드는 치료를 합니다.</p>
+							<ul class="timl-list mt10">
+								<li class="timl65"><em class="jh-black">- 침, 한약 : </em>근본적인 원인을 없애면서 자궁의 기능을 회복</li>
+								<li class="timl33"><em class="jh-black">- 뜸 : </em>아랫배를 따뜻하게 해주고 기혈을 보강하여 기혈 순환을 조화롭게 함으로써 막힌 경락을 풀어줌</li>
+								<li class="timl45"><em class="jh-black">- 좌훈 : </em>자궁 부속기 및 항문 주의의 혈액순환을 왕성하게 하여 하복부의 노폐물을 없앰</li>
+							 </ul>
+						</dd>
+
+						<dt>한&#183;양방 치료</dt>
+						<dd>
+							(양방치료의) 과배란 시술 직후 난소와 자궁을 포함한 생식기계는 매우 민감하고 약한 상태로 평소에 자궁 기능이 약한 경우라면 착상에 어려움이 있을 수 있습니다. 이 때 자궁 기능을 회복하는 한방 치료를 선행하고 인공수정이나 수정란이식을 한다면 수정란 착상의 확률이 높아지게 됩니다.
+						</dd>
+
+						<dt>양방 치료</dt>
+						<dd>
+							과배란요법, 인공수정, 시험관아기시술
+						</dd>
+					</dl>
+					<img src="../images/ohaeng/img_wcon05.jpg" alt="남성" class="pt16" />
+					<p class="s-reason-stit">남성 불임의 원인은 정자의 숫자 부족, 활동성 약함, 모양의 기형, 조루, 지루 등은 모두 양기의 부족으로 인하며, 그 원인은 정신적 스트레스와 성생활 과다, 과로, 노화 등 다양합니다. 이에 <em class="jh-pink">양기를 복돋워주는 한약 처방으로 신성을 충만하게 하고 기력을 보충하여 스트레스와 피로에 대한 저항력을 길러주는 치료</em>가 도움이 됩니다.</p>
+					<dl class="jh-dot-list">
+						<dt>한방치료</dt>
+						<dd>
+							정자의 숫자 부족, 활동성 약함, 모양의 기형, 조루나 지루, 양기부족 : 생식기 계통을 주관하는 신장의 기능저하
+						</dd>
+
+						<dt>양기부족의 원인</dt>
+						<dd>
+							<ul class="timl-list">
+								<li class="timl57"><em class="jh-black">- 정신적 : </em>걱정, 근심, 불안, 공포, 초조, 탐욕, 실망, 증오 등</li>
+								<li class="timl57"><em class="jh-black">- 육체적 : </em>성생활 과다, 수면부족, 과로, 노화</li>
+							</ul>
+						</dd>
+
+						<dt>치료과정</dt>
+						<dd>
+							양기를 복돋워주는 한약 처방으로 신정을 충만하게 하고 기력을 보하면서 스트레스와 피로에 대한 저항력을 길러주는 치료(뜸, 두한족열요법, 약찍효과 등)가 도움이 됩니다. 
+						</dd>
+					</dl>
+
+					<p class="first_tit pt16"><span class="ico"><img src="../images/bul/bul_first_tit.gif" width="100%" alt="" /></span>오행센터의 불임/난임의 치료 단계</p>
+					<ol class="nomenses-step">
+						<li>
+							<p class="tit">검사</p>
+							<p class="tex timl-tex4"><em>기본검사 : </em>체열진단, 혈액검사(LFT, CBC/간기능, 신기능 검사), 체지방측정</p>
+							<p class="tex timl-tex4"><em>추가검사 : </em>초음파(자궁), 여성호르몬검사</p>
+						</li>
+						<li>
+							<p class="tit">한약</p>
+							<p class="tex timl-tex4"><em>기본한약 : </em>양방적 난소기능저하 - 원인이 없는 불임의 경우 한약처방</p>
+						</li>
+						<li class="last w-360">
+							<p class="tit">치료</p>
+							<p class="tex timl98"><em>오행 온궁 치료 : </em>뜸, 좌운, 온궁침</p>
+							<p class="tex timl98"><em>오행 보궁 치료 : </em>뜸, 좌훈, 온궁침, 보궁치료(순기)</p>
+							<p class="tex timl98"><em>오행 양생 치료 : </em>양생침, 뜸 양생치료(순기), 경근균형요법</p>
+							<p class="tex timl98"><em>오행 보양 치료 : </em>뜸, 보양침, 보양치료(순기), 경근균형요법</p>
+							<p class="tex timl116"><em>선택치료프로그램 : </em>뜸, 좌훈, 순기, 경근균형요법<br />*단일 치료 가능</p>
+						</li>
+					</ol>
+				</div>
+				<!-- //tab-con2 -->
+
+				<!-- tab-con3 -->
+				<div id="#tab-con3" class="tab-con">
+					<!-- contents title -->
+					<div class="con-tit ohaeng_woman03">
+						<h4>
+							<span class="orange-text">출산 전, 후</span>몸의 변화를 가장 잘 아는
+							<span class="onlyPC-block">여성진료진의 <span class="violet-text line">1:1맞춤처방</span>치료</span>
+						</h4>
+						<p class="stit">
+							오행치료는 몸의 문제가 되는 근본 원인을 치료하며
+							<span class="onlyPC-block">자궁 건강을먼저 회복시켜 줍니다.</span>
+							<span class="onlyPC-block">특히 출산 후 발생할 수 있는 <em class="blue-text">여러 질환의 예방과</em></span>
+							<span class="onlyPC-block"><em class="blue-text">기혈 순환에장애를 예방하기 위함</em>입니다.</span>
+						</p>
+					</div>
+					<!-- //contents title -->
+
+					<p class="first_tit"><span class="ico"><img src="../images/bul/bul_first_tit.gif" width="100%" alt="" /></span>산후병의 정의</p>
+					<p class="first_stit">
+						산후병이란 <em class="jh-pink">신산 후 (고대에는 산후 1개월 내, 최근에는 분만 후 7일 이내)나 산욕기(태아, 태반 및 그 부속물의 만출 후에 생식기관이 비임신 상태로 회복하는 데 필요한 일정한 시간. 대략 6~8주 소요)에 산모에게 발생하는 분만이나 산욕과 관련된 질병</em>을 말합니다. 우리나라에서는 출산을 하는 대부분의 산모는 최소 3주 정도의 적극적인 산후조리 기간을 경험하게 됩니다. 예로부터 한의학에서는 출산 후의 산후조리를 매우 중요하게 강조하였는데 이는 출산 후 발생할 수 있는 여러 질환의 예방과 더불어 “산후풍”에 걸리지 않기 위함이었습니다. 대체로 분만 후 6~8주간에는 산모의 면역, 관절, 생리 기능이 불완전한 상태이기에 여러 가지 질병이 발생할 가능성이 높습니다. 그러므로 출산 후 일정 기간은 특별한 주의와 노력이 요구됩니다. 
+					</p>
+
+					<p class="first_tit pt16"><span class="ico"><img src="../images/bul/bul_first_tit.gif" width="100%" alt="" /></span>산후병의 특징</p>
+					<ul class="hand-list">
+						<li class="first">
+							<div class="img"><img src="../images/ohaeng/postnatal_01.jpg" width="100%" alt="" /></div>
+						</li>
+						<li class="second">
+							<div class="img"><img src="../images/ohaeng/postnatal_02.jpg" width="100%" alt="" /></div>
+						</li>
+						<li class="third">
+							<div class="img"><img src="../images/ohaeng/postnatal_03.jpg" width="100%" alt="" /></div>
+						</li>
+					</ul>
+
+					<p class="first_tit pt16"><span class="ico"><img src="../images/bul/bul_first_tit.gif" width="100%" alt="" /></span>산후병의 3대 원인</p>
+					<div class="postnatal_con">
+						<img src="../images/ohaeng/postnatal_con01.jpg" alt="기혈허약, 어혈, 위기허약" />
+						<dl>
+							<dt>산후조리를 해야하는 이유</dt>
+							<dd>
+								<p>산후에 몸이 다허(원기부족), 다어(대사기능저하로 인한 순환정체)한 상태를 개선하지 않으면 혈훈, 두통, 발열, 감열, 자궁 내 불순물 과다배출, 복통, 변비, 설사, 잔뇨감 및 소변통, 식은땀 요통, 수면장애, 부종, 치질, 산후기미, 유방통, 기침, 천식 등 다양한 질환이 오기 쉽습니다.</p>
+								<p class="jh-mt5">출산 이후 여성은 다허, 다어하기 쉽습니다 이는 분만 시 여성의 기혈관련 맥이 손상되고 다량의 혈액 손실로 인해 빈혈과 대사장애를 일으키기 쉬우며 체내에 어혈이 쌓임으로써 신체 기혈 순환에 장애가 발생하기 때문입니다.</p>
+							</dd>
+						</dl>
+					</div>
+
+					<p class="first_tit pt16"><span class="ico"><img src="../images/bul/bul_first_tit.gif" width="100%" alt="" /></span>산후(분만 6~8주)증상 및 치료</p>
+					<div class="table-area">
+						<table class="register03 woman-table">
+							<colgroup>
+								<col style="width:32%;" />
+								<col />
+							</colgroup>
+							<tbody>
+								<tr>
+									<th>산후 초기 어혈<br />(유산 후 관리)</th>
+									<td>
+										태아와 부속물이 만출 된 후 자궁 내에 남아있는 혈탁액은 산후 2~3주 내에 모두 배출되어야 하지만 자궁 내에 남아 있게 되면 기혈 순환을 저해하여, 자궁복구 부전과 하복통, 자궁 근종, 불임, 생식기의 염증, 어혈성 전신 통증 등의 원인이 됩니다.
+									</td>
+								</tr>
+								<tr>
+									<th>산후풍<br />(産後風)</th>
+									<td>
+										산후섭생 실조로 인해 인체 각 부위에 발생하게 되는 동통 증후군(Post-partum Pain Syndrome)으로서 통증(身痛), 추위(惡寒), 땀(發汗), 감각 이상 등 자율신경 실조증과 유사한 전신 증상이 있습니다.
+									</td>
+								</tr>
+								<tr>
+									<th>산후<br />(發汗/땀)</th>
+									<td>
+										<p class="ex-tit">산후 보약이 필요한 경우</p>
+										<ul class="timl-list">
+											<li>- 어지럼증, 경련, 신체통, 하복통, 과도한 땀 혹은 오한</li>
+											<li>- 산후 우울증 및 기억력 손실</li>
+											<li>- 진액 소모로 인한 기능적 소화불량, 변비, 虛煩(허번. 가슴이 답답하고 얼굴로 열이 뜨며 손발 등 말초부위는 차가운 증상), 결유缺乳(젖 부족)</li>
+											<li>- 면역력 저하로 인한 감기와 피부 트러블 등</li>
+											<li>- 산후 탈모 </li>
+										</ul>
+									</td>
+								</tr>
+								<tr>
+									<th>젖 말리기<br />(免乳)</th>
+									<td>
+										수유 중단 시기가 되었는데 유즙이 끊이지 않는 경우, 산모의 기혈 허실(虛實) 상태에 따라 처방을 선택하여 유즙 유출을 제어합니다.(유방 창만과 통증을 개선하고 유선염을 예방)
+									</td>
+								</tr>
+								<tr>
+									<th>산후 우울증<br />(氣鬱/기울)</th>
+									<td>
+										산모는 임신과 분만 시 경험하는 흥분과 두려움에 따른 정서적 불안감, 산욕 초기의 불편감, 수면 부족으로 인한 피로, 양육에 대한 걱정, 신체 변화에 따른 우울감 등이 복합적으로 작용하여 산후 불안 심리를 겪게 됩니다. 
+									</td>
+								</tr>
+								<tr>
+									<th>산후 부종<br/ >&amp;<br/ >(氣鬱/기울)</th>
+									<td>
+										임신 평균 체중 증가량 12.5kg이 어혈의 정체와 기혈 순환의 회복의 지연으로 제때에 부종 감소가 이뤄지지 않는다면, 이후 만성 부종과 과체중으로 이어집니다.
+										<p class="jh-pink timl16 jh-mt5">※ 적절한 산후 조리는 통상 3-6개월 내에 임신 전 체중을 회복하는 것으로 산후 6개월에 임신 전 체중으로의 복귀 여부가 장기적 체중감량 실패 여부를 결정합니다.</p>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+					<p class="first_tit pt16"><span class="ico"><img src="../images/bul/bul_first_tit.gif" width="100%" alt="" /></span>대표적인 오행 한방 치료 요법</p>
+					<div class="table-area">
+						<table class="register03 woman-table">
+							<colgroup>
+								<col style="width:32%;" />
+								<col />
+							</colgroup>
+							<tbody>
+								<tr>
+									<th>오행한약</th>
+									<td>
+										수액 대사를 활성화하여 부종을 내리는 한편 <em class="jh-pink">새로운 조직재생과 복구를 돕는 엄선된 약재만을 사용</em>하여 처방합니다.
+									</td>
+								</tr>
+								<tr>
+									<th>오행좌훈</th>
+									<td>
+										자궁 부속기 및 항문 주위의 혈액 순환을 왕성하게 하고, 어혈과 수독의 독소를 배출, 기혈을 순환시키고 붓기나 노폐물 등 울혈이 없어지면서 <em class="jh-pink">체중감소 효과</em>가 나타납니다.
+									</td>
+								</tr>
+								<tr>
+									<th>온행<br />온향요법(뜸)</th>
+									<td>
+										자궁을 포함한 하복부에 온열 자극을 더하여 잔류한 태반편이나 노폐물의 탈락을 촉진하여 지혈과 진동의 효과가 있고, <em class="jh-pink">새로운 조직 세포의 재생</em>에 도움을 줍니다.
+									</td>
+								</tr>
+								<tr>
+									<th>오행 <span class="onlyM-block">두한족열</span></th>
+									<td>
+										위로 뜨기 쉬운 화(火)의 기운은 아래로 내리고, 아래로 가라앉기 쉬운 수(水)의 기운은 위로 올려 인체의 가장 이상적인 한열(寒熱)평형 상태를 찾는 치료입니다.
+									</td>
+								</tr>
+								<tr>
+									<th>오행 <span class="onlyM-block">순기요법</span></th>
+									<td>
+										이완된 자궁 체부와 복벽을 수축하게 하며, <em class="jh-pink">국소 부위에 축적된 지방과 부종을 치료</em>합니다. (하지순기, 복부순기, 등순기)
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+					<p class="first_tit pt16"><span class="ico"><img src="../images/bul/bul_first_tit.gif" width="100%" alt="" /></span>오행센터의 산전/산후 치료 단계</p>
+					<ol class="nomenses-step">
+						<li>
+							<p class="tit">검사</p>
+							<p class="tex timl-tex4">
+								<em>기본검사 : </em>체열진단, 혈액검사(LFT, CBC), 체지방측정
+							</p>
+							<p class="tex timl-tex4">
+								<em>추가검사 : </em>초음파(자궁), 여성호르몬검사
+							</p>
+						</li>
+						<li class="w-210">
+							<p class="tit">한약</p>
+							<p class="tex timl-tex4">
+								<em>기본한약 : </em>산후 어혈한약/보혈한약
+							</p>
+							<p class="tex timl-tex4">
+								<em>추가한약 : </em>산후 공진단
+							</p>
+						</li>
+						<li class="last w-400">
+							<p class="tit">치료</p>
+							<p class="tex">
+								<em>오행 모후 프로그램(산후 3개월 이후/부종, 어혈, 체력저하 : </em>뜸 또는 좌훈, 모후침, 모후치료
+							</p>
+							<p class="tex">
+								<em>오행 모체프로그램(산후 3개월 이후/산후통증, 체형교정, 체중조절) : </em>뜸, 좌훈, 온궁침, 보궁치료(순기)
+							</p>
+							<p class="tex">
+								<em>선택치료프로그램 : </em>뜸, 좌훈, 순기요법 등 단독 프로그램 진행 가능
+							</p>
+						</li>
+					</ol>
+				</div>
+				<!-- //tab-con3 -->
+
+				<!-- tab-con4 -->
+				<div id="#tab-con4" class="tab-con">
+					<!-- contents title -->
+					<div class="con-tit ohaeng_woman04">
+						<h4>
+							여성의 몸을 이해하고 만든
+							<span class="onlyTP-block"><span class="orange-text">오행프로그램</span>으로</span>
+							<span class="onlyTP-block">갱년기 증상별로 <span class="violet-text line">특화된 치료</span></span>
+						</h4>
+						<p class="stit">
+							40대 중, 후반부터 시작되는 몸의 노화로 여성호르몬
+							<span class="onlyPC-block">분비의 감소는 불편한 증상들을 가져오는데 <em class="blue-text">적극적</em></span>
+							<span class="onlyPC-block"><em class="blue-text">치료로 이러한 증상들</em>을 없앨 수 있습니다.</span>
+						</p>
+					</div>
+					<!-- //contents title -->
+
+					<p class="first_tit"><span class="ico"><img src="../images/bul/bul_first_tit.gif" width="100%" alt="" /></span>갱년기 개요</p>
+					<p class="first_stit">
+						<em class="jh-pink">여성이 나이가 들면서 난소가 노화되어 기능이 떨어지면 배란 및 여성호르몬의 생산이 더 이상 이루어지지 않는데, 이로 인해 나타나는 현상이 바로 폐경</em>입니다. 대개 1년간 생리가 없을 때 폐경으로 진단합니다. 이러한 변화는 대개 40대 중/후반에서 시작되어 점진적으로 진행되는데 이때부터 생리가 완전히 없어지는 폐경이 나타난 이후의 약 1년까지를 폐경 이행기, 더 흔히는 갱년기라고 하며 그 기간은 평균 4~7년 정도입니다.<br />
+						또한 남성 갱년기 장애가 여성갱년기 장애보다 비교적 문제가 되지 않는 것은 테스트스테론의 분비량의 저하가 에스트로겐의 저하보다 가볍기 때문으로, 그 증상이 표면에 나타나기 어려워 &#8220;나이 탓이다&#8221;라고 넘기는 경우가 많기 때문입니다. 그러나 여성의 경우는 비교적 가볍다는 것 뿐이지 남성의 경우도 개인차에 따라 강한 부담과 자각증상을 동반하는 경우가 있습니다.
+					</p>
+
+					<p class="first_tit pt16"><span class="ico"><img src="../images/bul/bul_first_tit.gif" width="100%" alt="" /></span>갱년기의 주요 증상</p>
+					<ul class="pinkbg-list">
+						<li><p>안면홍조</p></li>
+						<li><p>만성피로</p></li>
+						<li><p>골다공증</p></li>
+						<li><p>소변장애</p></li>
+						<li><p>성욕감퇴</p></li>
+						<li><p>수족냉증</p></li>
+						<li><p>관절통증</p></li>
+						<li><p>만성골반통</p></li>
+						<li><p>조기폐경</p></li>
+					</ul>
+					<dl class="square-list mt mb0">
+						<dt>
+							<span class="ico"><img src="../images/bul/bul_square_1.gif" width="100%" alt="1" /></span>
+							폐경이행기 증상
+						</dt>
+						<dd>
+							가장 흔하게 나타나는 증상은 생리가 불규칙해지는 것입니다. 또한 여성호르몬 결핍에 의한 증상이 나타나는데, 우리나라 여성의 50% 정도는 급성 여성호르몬 결핍 증상(안면홍조, 발한 등)을 경험하는 것으로 알려져 있습니다. 그리고 약 20%에 해당하는 여성들은 갱년기 증상이 좀 더 심하게 나타나는데, 안면홍조와 함께 피로감, 불안감, 우울, 기억력 장애 등이 동반되기도 하고, 주로 밤에 증상이 나타나는 경우에는 수면 장애를 겪기도 합니다.<br />
+							급성 여성호르몬 결핍 증상은 폐경 약 1~2년 전부터 시작되어 폐경 후 3~5년간 지속될 수 있습니다. 
+						</dd>
+						<dt>
+							<span class="ico"><img src="../images/bul/bul_square_2.gif" width="100%" alt="2" /></span>
+							폐경이행기 이후 증상
+						</dt>
+						<dd>
+							만성적으로 여성호르몬이 결핍되면 비뇨생식기계의 위축에 따른 증상(질 건조감, 성교통, 반복적인 질 감염으로 인한 질염, 방광염, 배뇨통, 급뇨), 정신적 불안정(집중장애 및 단기 기억장애, 불안과 신경과민, 기억력 감소, 성욕 감퇴), 피부관절계 변화(피부 건조와 위축, 근육통 관절통), 골다공증의 진행으로 인한 골절의 증가 등이 발생할 수 있습니다 이 중 질 건조증과 이로 인한 성교통은 부부관계를 기피하게 하고 성욕저하를 유발하는 원인이 되고 있으며, 이러한 증상들을 모두 폐경기 증상으로 간주합니다.
+						</dd>
+					</dl>
+
+					<p class="first_tit pt16"><span class="ico"><img src="../images/bul/bul_first_tit.gif" width="100%" alt="" /></span>갱년기의 원인</p>
+					<p class="first_stit">
+						폐경은 난소의 노화에 의한 것이며, 질병이라기보다는 자연적인 신체적 변화 과정의 하나입니다.<br />
+						갱년기 장애는 <em class="jh-pink">난소의 내분기 기능 감퇴로 인한 여성호르몬의 감소가 주된 원인</em>입니다.
+					</p>
+					<img src="../images/ohaeng/img_wcon06.jpg" alt="여성 호르몬과 라이프 사이클" class="img-wcon06" />
+
+					<p class="first_tit pt16"><span class="ico"><img src="../images/bul/bul_first_tit.gif" width="100%" alt="" /></span>오행센터 갱년기 치료 단계</p>
+					<ol class="nomenses-step">
+						<li>
+							<p class="tit">검사</p>
+							<p class="tex timl-tex4">
+								<em>기본검사 : </em>체열진단, 혈액검사(LFT, CBC/간기능, 신기능 검사), 체지방측정
+							</p>
+							<p class="tex timl-tex4">
+								<em>추가검사 : </em>동맥경화 초음파(폐경), 호르몬검사, 골다공증
+							</p>
+						</li>
+						<li class="w-210">
+							<p class="tit">한약</p>
+							<p class="tex timl-tex4">
+								<em>기본한약 : </em>한약
+							</p>
+							<p class="tex timl-tex4">
+								<em>추가한약 : </em>공진단/경옥환
+							</p>
+						</li>
+						<li class="last w-400">
+							<p class="tit">치료</p>
+							<p class="tex timl-tex4">
+								<em>기본치료 : </em>오행 로하티 프로그램 〉 로하티 침, 오행 왕뜸 는 좌훈, 로하티 순기요법
+							</p>
+							<p class="tex timl-tex4">
+								<em>선택치료 : </em>오행W클리닉 태반주사요법, 호르몬 보통요법, 영양제처방, 비타민요법
+							</p>
+						</li>
+					</ol>
+				</div>
+				<!-- //tab-con4 -->
+
+			</div>
+		</div>
+		<!-- //Content Start -->
+
+    </div>
+    <!-- //contents -->
+
+    <!-- footer -->
+    <div id="footer">
+        <div class="box-Fselect">
+			
+			<ul class="foot-info">
+				<li class="ml0"><a href="#none">병원소개</a></li>
+				<li><a href="#none">이용약관</a></li>
+				<li><a href="#none">개인정보취급방침</a></li>
+				<li class="bgNone"><a href="#none">이메일집단수집거부</a></li>
+			</ul>
+
+            <ul class="sns">
+                <li><a href="#none"><img src="../images/btn/btn_f.jpg" alt=""></a></li>
+                <li><a href="#none"><img src="../images/btn/btn_t.jpg" alt=""></a></li>
+                <li><a href="#none"><img src="../images/btn/btn_y.jpg" alt=""></a></li>
+                <li><a href="#none"><img src="../images/btn/btn_b.jpg" alt=""></a></li>
+            </ul>
+            <div class="select">
+                <select>
+                    <option>패밀리 사이트</option>
+                    <option>패밀리 사이트</option>
+                    <option>패밀리 사이트</option>
+                    <option>패밀리 사이트</option>
+                    <option>패밀리 사이트</option>
+                </select>
+            </div>
+
+
+			<!-- pc, 테블릿 address -->
+			<p class="address">
+				<span class="mobile">상호명 : 광동한방병원</span>   소재지 : 서울시 강남구 161번지 가산의료제단 광동한방병원   <span class="mobile">사업자등록번호 : 120-82-02521   <span class="tablet">대표자 : 이강남</span></span>
+				<span class="pc">TEL : 02-2222-4888   FAX : 02-2222-4811, 4899</span>
+				<span class="mobile">COPYRIGHTS (C)  2013 by kwangdong. ALL RIGHTS RESERVED.</span>
+			</p>
+
+		</div>
+       
+        <a href="#none" class="btn-topMv"><img src="../images/btn/btn_top.png" alt="문서 상단 이동"></a>
+    </div>
+    <!-- //footer -->
+    <!-- footer-nav -->
+    <div class="footer-nav">
+        <ul>
+            <li>
+                <a href="#none">
+                    <span class="bl"><img src="../images/bul/bul_footerNav_1.png" alt=""></span>
+                    <img src="../images/nav/nav_footer_1.png" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="#none">
+                    <span class="bl"><img src="../images/bul/bul_footerNav_2.png" alt=""></span>
+                    <img src="../images/nav/nav_footer_2.png" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="#none">
+                    <span class="bl"><img src="../images/bul/bul_footerNav_3.png" alt=""></span>
+                    <img src="../images/nav/nav_footer_3.png" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="#none">
+                    <span class="bl"><img src="../images/bul/bul_footerNav_4.png" alt=""></span>
+                    <img src="../images/nav/nav_footer_4.png" alt="">
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- //footer-nav -->
+</div>
+
+</body>
+</html>

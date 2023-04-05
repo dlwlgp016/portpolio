@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <link rel="stylesheet" href="../common/css/common.css">
+    <!--[if lt IE 9]>
+    <script src="common/js/respond.src.js"></script>
+    <![endif]-->
+    <script src="../common/js/jquery-1.10.1.min.js"></script>
+    <script src="../common/js/front.js"></script>
+    <script src="../common/js/ui.js"></script>
+    <script src="../common/js/ui_002.js"></script>
+</head>
+
+<body class="body-bg">
+<!--
+    모바일 경우 : class="warp-mobile"
+    pc 경우 : class="warp-pc"
+    front.js 에서 할당 해주고 있음
+-->
+<script type="text/javascript">
+// body 클릭시 네비게이션 닫기
+$(document).ready(function(){
+    $('#box-mobile').click(function(event){
+        $('.warp-pc #gnb .wrap').show();
+        $('#gnb .btn-1').parent().next().hide();
+
+        $('#gnb').find('.btn-1').removeClass('select');
+        $('#gnb .btn-1').parents('.box-select').find('.btn-1').removeClass('select');
+    });
+});
+</script>
+
+<!-- 네비게이션 -->
+<div id="nav-mobile">
+    <!-- gnb -->
+    <div id="gnb" role="navigation" class="gnb clearfix">
+        <div class="office-info box-select">
+            <h1><a href="#none" class="btn-1"><span>광동한방병원 센터<b class="bul"></b></span></a></h1>
+            <div id="gn1" class="wrap">
+                <div>
+                    <div>
+                        <h2 class="has-sub"><a href="#none">오정 통증재활센터<b class="bul"></b></a></h2>
+                        <ul>
+                            <li><a href="#none">1</a></li>
+                            <li><a href="#none">2</a></li>
+                        </ul>
+                        <h2 class="alt has-sub"><a href="#none">오정 통증재활센터<b class="bul"></b></a></h2>
+                        <ul class="alt">
+                            <li><a href="#none">오정 진료프로세스</a></li>
+                            <li><a href="#none">오정 추천프로그램</a></li>
+                            <li><a href="#none">치료성공사례</a></li>
+                            <li><a href="#none">허리통증</a></li>
+                            <li><a href="#none">골반통증</a></li>
+                            <li><a href="#none">목통증</a></li>
+                            <li><a href="#none">턱관절통증</a></li>
+                            <li><a href="#none">어깨통증</a></li>
+                            <li><a href="#none">무릎통증</a></li>
+                            <li><a href="#none">교통사고 통증</a></li>
+                            <li><a href="#none">체형교정</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <h2 class="has-sub"><a href="#none">뇌신경기능센터<b class="bul"></b></a></h2>
+                        <ul>
+                             <li><a href="#none">1</a></li>
+                            <li><a href="#none">2</a></li>
+                        </ul>
+                        <h2 class="alt has-sub"><a href="#none">종합검진센터<b class="bul"></b></a></h2>
+                        <ul class="alt">
+                             <li><a href="#none">1</a></li>
+                            <li><a href="#none">2</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="surgery-info box-select">
+            <h1><a href="#none" class="btn-1"><span>광동한방병원 정보<b class="bul"></b></span></a></h1>
+            <div id="gn2" class="wrap">
+                <div>
+                    <div>
+                        <h2 class="has-sub"><a href="#none">상담 및 예약<b class="bul"></b></a></h2>
+                        <ul>
+                            <li><a href="#none">온라인상담</a></li>
+                            <li><a href="#none">온라인예약</a></li>
+                            <li><a href="#none">자주묻는질문</a></li>
+                            <li><a href="#none">고객의소리</a></li>
+                        </ul>
+                        <h2 class="alt has-sub"><a href="#none">치료후기<b class="bul"></b></a></h2>
+                        <ul class="alt">
+                            <li><a href="#none">1</a></li>
+                            <li><a href="#none">2</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <h2 class="has-sub"><a href="#none">이벤트/공지</a></h2>
+                        <ul>
+                            <li><a href="#none">1</a></li>
+                            <li><a href="#none">2</a></li>
+                        </ul>
+                        <h2 class="alt has-sub"><a href="#none">진료안내<b class="bul"></b></a></h2>
+                        <ul class="alt">
+                            <li><a href="#none">1</a></li>
+                            <li><a href="#none">2</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <h2 class="has-sub"><a href="#none">병원소개</a></h2>
+                        <ul>
+                            <li><a href="#none">1</a></li>
+                            <li><a href="#none">2</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //gnb -->
+</div>
+<!-- //네비게이션 -->
+
+<div id="box-mobile"><!-- id="box-mobile" 은 모바일에서만 사용 -->
+    <!-- header -->
+    <div id="header">
+        <div class="header-pc"><!-- 20131216 class="header-pc" 추가 -->
+            <!-- 20131216 유틸 이미지들 .jpg 에서 .png 로 변경 -->
+            <h1 class="h1-logo"><a href="#none"><img src="../images/logo/logo_h1.jpg" alt="광동한방병원"></a></h1>
+            <div class="utility">
+                <ul class="btn">
+                    <li><a href="#none"><img src="../images/btn/btn_login.png" alt="로그인"></a></li><!-- btn_logout.png 로그아웃 -->
+                    <li><a href="#none"><img src="../images/btn/btn_memberJoin.png" alt="회원가입"></a></li>
+                </ul>
+                <!-- 20131216 이미지에서 text로 변경 -->
+                <ul class="list">
+                    <li><a href="#none">ENGLISH</a></li>
+                    <li><a href="#none">China</a></li>
+                    <li><a href="#none">Japan</a></li>
+                    <li><a href="#none">SITE MAP</a></li>
+                    <li class="last"><a href="#none">Intranet</a></li>
+                </ul>
+                <!-- //20131216 이미지에서 text로 변경 -->
+            </div>
+            <!-- 20131216 gnb-pc -->
+            <script type="text/javascript">
+            $(document).ready(function(){
+                /* 20131216 pc 네비게이션 ssw */
+                // 1뎁스
+                $('.ul-1 .li-1 a').click(function(){
+                    var tabIndex = $(this).parent('.li-1').index(); // 메뉴 index
+                    $('.gnb-pc').find('.ul-2').hide();
+                    $('.gnb-pc').find('.ul-2').eq(tabIndex).show();
+                    $('.gnb-pc').find('.li-1').removeClass('on');
+                    $(this).parent().addClass('on');
+                });
+                // 2뎁스
+                $('.ul-2 .li-2 a').click(function(){
+                    $('.gnb-pc').find('.li-2').removeClass('on');
+                    $(this).parent().addClass('on');
+                });
+                // contents click 시 pc 네비 닫기
+                $('#contents').click(function(){
+                    $('.ul-2').hide();
+                });
+            });
+            </script>
+            <div class="gnb-pc">
+                <!-- 1뎁스 -->
+                <ul class="ul-1">
+                    <li class="li-1">
+                        <a href="#none" class="a-1" style="margin-left:256px;">오정 통증재활센터</a>
+                    </li>
+                    <li class="li-1">
+                        <a href="#none" class="a-1">오행 웰에이징센터</a>
+                    </li>
+                    <li class="li-1">
+                        <a href="#none" class="a-1">뇌신경기능센터</a>
+                    </li>
+                    <li class="li-1">
+                        <a href="#none" class="a-1">종합검진센터</a>
+                    </li>
+                    <li class="li-1">
+                        <a href="#none" class="a-1">상담 및 예약</a>
+                    </li>
+                    <li class="li-1">
+                        <a href="#none" class="a-1">치료후기</a>
+                    </li>
+                    <li class="li-1">
+                        <a href="#none" class="a-1">이벤트/공지</a>
+                    </li>
+                    <li class="li-1">
+                        <a href="#none" class="a-1">진료안내</a>
+                    </li>
+                    <li class="li-1 last">
+                        <a href="#none" class="a-1">병원소개</a>
+                    </li>
+                </ul>
+                <!-- //1뎁스 -->
+                <!-- 오정 통증재활센터 2뎁스 -->
+                <ul class="ul-2 bg-1">
+                    <li class="li-2 on">
+                        <a href="#none" class="a-2">광동한방병원</a>
+                    </li>
+                    <li class="li-2">
+                        <a href="#none" class="a-2">의료진소개</a>
+                    </li>
+                    <li class="li-2">
+                        <a href="#none" class="a-2">한약관리시스템</a>
+                    </li>
+                    <li class="li-2">
+                        <a href="#none" class="a-2">층별시설안내</a>
+                    </li>
+                    <li class="li-2">
+                        <a href="#none" class="a-2">언론 속 광동</a>
+                    </li>
+                </ul>
+                <!-- //오정 통증재활센터 2뎁스 -->
+                <!-- 오행 웰에이징센터 2뎁스 -->
+                <ul class="ul-2 bg-2">
+                    <li class="li-2 on">
+                        <a href="#none" class="a-2">1-1</a>
+                    </li>
+                    <li class="li-2">
+                        <a href="#none" class="a-2">1-2</a>
+                    </li>
+                    <li class="li-2">
+                        <a href="#none" class="a-2">1-3</a>
+                    </li>
+                    <li class="li-2">
+                        <a href="#none" class="a-2">1-4</a>
+                    </li>
+                    <li class="li-2">
+                        <a href="#none" class="a-2">1-5</a>
+                    </li>
+                </ul>
+                <!-- //오행 웰에이징센터 2뎁스 -->
+                <!-- 뇌신경기능센터 2뎁스 -->
+                <ul class="ul-2 bg-3">
+                    <li class="li-2 on">
+                        <a href="#none" class="a-2">2-1</a>
+                    </li>
+                    <li class="li-2">
+                        <a href="#none" class="a-2">2-2</a>
+                    </li>
+                    <li class="li-2">
+                        <a href="#none" class="a-2">2-3</a>
+                    </li>
+                    <li class="li-2">
+                        <a href="#none" class="a-2">2-4</a>
+                    </li>
+                    <li class="li-2">
+                        <a href="#none" class="a-2">2-5</a>
+                    </li>
+                </ul>
+                <!-- //뇌신경기능센터 2뎁스 -->
+                <!-- 종합검진센터 2뎁스 -->
+                <ul class="ul-2 bg-4">
+                    <li class="li-2 on">
+                        <a href="#none" class="a-2">3-1</a>
+                    </li>
+                    <li class="li-2">
+                        <a href="#none" class="a-2">3-2</a>
+                    </li>
+                    <li class="li-2">
+                        <a href="#none" class="a-2">3-3</a>
+                    </li>
+                    <li class="li-2">
+                        <a href="#none" class="a-2">3-4</a>
+                    </li>
+                    <li class="li-2">
+                        <a href="#none" class="a-2">3-5</a>
+                    </li>
+                </ul>
+                <!-- //종합검진센터 2뎁스 -->
+                <!-- 상담 및 예약 2뎁스 -->
+                <ul class="ul-2 bg-5">
+                    <li class="li-2 on">
+                        <a href="#none" class="a-2">4-1</a>
+                    </li>
+                    <li class="li-2">
+                        <a href="#none" class="a-2">4-2</a>
+                    </li>
+                    <li class="li-2">
+                        <a href="#none" class="a-2">4-3</a>
+                    </li>
+                    <li class="li-2">
+                        <a href="#none" class="a-2">4-4</a>
+                    </li>
+                    <li class="li-2">
+                        <a href="#none" class="a-2">4-5</a>
+                    </li>
+                </ul>
+                <!-- //상담 및 예약 2뎁스 -->
+                <!-- 치료후기 2뎁스 -->
+                <ul class="ul-2 bg-6">
+                    <li class="li-2 on">
+                        <a href="#none" class="a-2">5-1</a>
+                    </li>
+                    <li class="li-2">
+                        <a href="#none" class="a-2">5-2</a>
+                    </li>
+                    <li class="li-2">
+                        <a href="#none" class="a-2">5-3</a>
+                    </li>
+                    <li class="li-2">
+                        <a href="#none" class="a-2">5-4</a>
+                    </li>
+                    <li class="li-2">
+                        <a href="#none" class="a-2">5-5</a>
+                    </li>
+                </ul>
+                <!-- //치료후기 2뎁스 -->
+                <!-- 이벤트/공지 2뎁스 -->
+                <ul class="ul-2 bg-7">
+                    <li class="li-2 on">
+                        <a href="#none" class="a-2">6-1</a>
+                    </li>
+                    <li class="li-2">
+                        <a href="#none" class="a-2">6-2</a>
+                    </li>
+                    <li class="li-2">
+                        <a href="#none" class="a-2">6-3</a>
+                    </li>
+                    <li class="li-2">
+                        <a href="#none" class="a-2">6-4</a>
+                    </li>
+                    <li class="li-2">
+                        <a href="#none" class="a-2">6-5</a>
+                    </li>
+                </ul>
+                <!-- //이벤트/공지 2뎁스 -->
+                <!-- 진료안내 2뎁스 -->
+                <ul class="ul-2 bg-8">
+                    <li class="li-2 on">
+                        <a href="#none" class="a-2">7-1</a>
+                    </li>
+                    <li class="li-2">
+                        <a href="#none" class="a-2">7-2</a>
+                    </li>
+                    <li class="li-2">
+                        <a href="#none" class="a-2">7-3</a>
+                    </li>
+                    <li class="li-2">
+                        <a href="#none" class="a-2">7-4</a>
+                    </li>
+                    <li class="li-2">
+                        <a href="#none" class="a-2">7-5</a>
+                    </li>
+                </ul>
+                <!-- //진료안내 2뎁스 -->
+                <!-- 병원소개 2뎁스 -->
+                <ul class="ul-2 bg-9">
+                    <li class="li-2 on">
+                        <a href="#none" class="a-2">8-1</a>
+                    </li>
+                    <li class="li-2">
+                        <a href="#none" class="a-2">8-2</a>
+                    </li>
+                    <li class="li-2">
+                        <a href="#none" class="a-2">8-3</a>
+                    </li>
+                    <li class="li-2">
+                        <a href="#none" class="a-2">8-4</a>
+                    </li>
+                    <li class="li-2">
+                        <a href="#none" class="a-2">8-5</a>
+                    </li>
+                </ul>
+                <!-- //병원소개 2뎁스 -->
+            </div>
+            <!-- //20131216 gnb-pc -->
+            <!-- mobile menu -->
+            <div class="mobile-menu">
+                <a href="#none" class="btn-menu"><img src="../images/btn/btn_menu.jpg" alt="모바일 메뉴"></a>
+            </div>
+            <!-- //mobile menu -->
+        </div>
+    </div>
+    <!-- //header -->
+
+    <!-- contents -->
+    <div id="contents">
+		
+		<!-- LocalNavigation -->
+		<div class="lnb-area">
+			<h3 class="tit">수전증 클리닉</h3>
+
+			<div class="lnb">
+				<a href="#none" class="none">HOME</a>
+				<span class="none">&#62;</span>
+				<a href="#none">뇌신경기능센터</a>
+				<span>&#62;</span>
+				<span class="active">수전증 클리닉</span>
+			</div>
+		</div>		
+		<!-- //LocalNavigation -->
+		
+		<!-- Content Start -->
+		<div class="inner-cont">
+			
+			<!-- contents title -->
+			<div class="con-tit hand">
+				<h4><span class="second">수전증</span>에는 <span class="first">다양한 원인</span>이<br /> 있으므로진단과정이 매우 중요합니다.</h4>
+				<p class="stit mt5">우리 몸의 일부가 떨리는 증상을 전진증이라고 한다. 특히 손이 떨리는 증상을 수전증이라고 하는데, 전진증상은 손 뿐만 아니라 다리, 턱 머리 목소리(성대), 목구멍, 눈, 입, 혀 등 신체 여러 분위에 걸쳐 나타나기도 합니다. </p>
+			</div>
+			<!-- //contents title -->
+			
+			<!-- first -->
+			<p class="first_tit"><span class="ico"><img src="../images/bul/bul_first_tit.gif" width="100%" alt="" /></span>수전증에 관한 한의학 이야기</p>
+			<span class="first_stit">
+				몸의 떨림이 시작되면 증을 스스로 조절하기 어려워지며, 리듬감 있게 규칙적으로 떨리는 증상으로 나타나게 됩니다. 수전증의 원인은 특별한 원인이 없는 본태성수전증, 파킨슨병으로 인한 신경이상, 소뇌기능이상, 다량의 카페인 섭취, 음주에 대한 금단증상, 갑상선 질환, 구리대시작애, 심리적 불안과 스트레스등으로 다양하게 구분해 볼 수 있다. 그 원인에 따라 진료방향이 결정되므로 진단과정이 매우 중요합니다. 
+동의보감에서 수전증은 심장이 허약해서 오는 것으로 보고 심장의 혈을 보하는 약을 사용합니다. 여기서 심장이 허한 것은 오늘날의 피를 다른 장기로 보내는 심장의 기능에 마음이 포함되고 또한 뇌기능도 포함이 되는데 이러한 심장기능이 약하고 
+마음이 약해서 여리고 인정이 많고 겁이 많고 뇌기능이 떨어진 사람들이 수전증이 잘 나타나는 것으로 봅니다. 심장과 마음이 약한 것은 유전적인 소인이 있어서 부모가 수전증이 있는 경우에 자녀에게서 나타나기도 합니다. 
+음주, 커피, 녹차, 스트레스 등이 악화요인이어서 이런 것들을 피하고 심리적인 안정을 유지하고 심장을 강화해야 합니다 
+			</span>
+			<!-- //first -->
+			
+			<!-- second -->	
+			<p class="first_tit pt16"><span class="ico"><img src="../images/bul/bul_first_tit.gif" width="100%" alt="" /></span>수전증은 증상에 따라 3가지 종류</p>
+			<ul class="hand-list">
+				<li class="first">
+					<div class="img"><img src="../images/img/tremor_step01.jpg" width="100%" alt="" /></div>
+					<p>움직이지 않는 상태에서 나타나는 손떨림 증상을 의미합니다.</p>
+				</li>
+				<li class="second">
+					<div class="img"><img src="../images/img/tremor_step02.jpg" width="100%" alt="" /></div>
+					<p>본인이 목표로 한 지점에 손이 거의 닿았을때 손이 떨리는 것을 말합니다.</p>
+				</li>
+				<li class="third">
+					<div class="img"><img src="../images/img/tremor_step03.jpg" width="100%" alt="" /></div>
+					<p>물건을 잡거나 손을 앞으로 내미는 행위나 자세를 취할 때 나타나는 손떨림 증상을 말합니다. </p>
+				</li>
+			</ul>
+			<!-- //second -->	
+
+			<!-- third -->	
+			<p class="first_tit pt16"><span class="ico"><img src="../images/bul/bul_first_tit.gif" width="100%" alt="" /></span>수전증의 한방적 치료방법</p>
+			<span class="first_stit">
+			물건을 잡거나 술잔을 주고 받고 술을 따르고 이런 동작을 정교하게 유지하는 것은 소뇌와 기저핵 쪽에서 하는 일인데 이런 동작에서 떨림이 있는 것은 뇌의 기능이 떨어진 것입니다. 뇌기능을 진단하여 문제가 더 되는 뇌를 치료하는 방향으로 침과 교정자극을 하고 체질을 진단하여 체질에 맞는 치료법을 추가적으로 실행하면 가벼운 수전증의 경우 완치가 가능하고 중등도와 심한 수전증 및 유전적인 소인이 있는 경우는 50~90%정도의 호전이 가능합니다. 
+			</span>
+			<!-- //third -->	
+			
+			<p class="first_tit pt16"><span class="ico"><img src="../images/bul/bul_first_tit.gif" width="100%" alt="" /></span>수전증의 한방적 치료방법</p>
+			<dl class="square-list">
+				<dt>
+					<span class="ico"><img src="../images/bul/bul_square_1.gif" width="100%" alt="1"></span>
+					전정기능검사(전기안진검사)
+				</dt>
+				<dd>
+					전정기능검사는 어두운 암실에서 환자에게 작은 불빛이 나타나면 이를 쳐다보고 불빛의 움직임을 따라 보게 하면서 검사를 시행합니다. 검사기계는 불빛을 따라 움직이는 안구운동에 따라 전기장의 변화를 측정하는데 시추적 검사, 단속운동검사, 시운동성검사 및 칼로리 검사 등이 포함되어있습니다. 분석결과를 바탕으로 대뇌, 소뇌, 중추신경계의 기능이상을 진단합니다. 
+				</dd>
+				<dt>
+					<span class="ico"><img src="../images/bul/bul_square_2.gif" width="100%" alt="2"></span>
+					뇌혈류검사(TCD)
+				</dt>
+				<dd>
+					뇌혈류검사란 도플러 효과를 이용해 뇌혈관 속에서 피가 흐르는 속도를 측정하는 검사법으로 초음파를 발사해 적혈구에서 반사되어 오는 파장으로 혈류속도를 측정하는 것입니다. 혈관 중 어느 한 곳이 좁아져 있다면 이 구간을 지나는 피의 속도는 다른 구간보다 빠르게 나타날 것이므로 혈관이 심하게 좁아졌을 때 발생하는 증상이 아직 나타나지 않았더라도 발병가능성이 있는 사람을 미리 알 수 있습니다. 편두통을 포함한 두통, 어지러움증의 진단에도 유용하게 활용되며 뇌의 활동성, 좌우뇌의 균형, 앞으로 뇌혈관질환이 발생할지 여부를 효과적으로 예측하기 위한 검사입니다. 
+				</dd>
+			</dl>
+			
+			<p class="first_tit pt16"><span class="ico"><img src="../images/bul/bul_first_tit.gif" width="100%" alt="" /></span>수전증 치료약</p>
+			<dl class="square-list">
+				<dt>
+					한약
+				</dt>
+				<dd>
+					수전증의 진단 원인에 따라 한약을 처방합니다. 본태성 진전으로 인한 수전증에는 뇌와 신경계의 안전을 위한 처방을 합니다. 가미온비탕 등을 기본으로 체질처방을 통해 소뇌의 기능 이상으로 운동요법, 뇌추나요법과 함께 반하백출천마탕 등의 처방이 기본으로 활용됩니다. 파킨슨병에는 뇌기능 활성화를 위한 고진음자 등을 처방하고, 스트레스 등으로 인한 심인성 진전에는 심장의 기능을 강화시켜주는 보심환을 처방합니다. 음주로 인한 수면증은 갈화해정탕을 기본으로 체질을 고려하여 약재를 가감하여 맞춤 처방합니다. 한약치료의 근본은 뇌기능과 관련이 있어 뇌기능을 좋아지게 하면 수전증의 증상도 자연스럽게 호전됩니다. 
+				</dd>
+			</dl>
+
+
+			<div class="hand_clinic_box">
+				<div class="tit_img"><img src="../images/btn/btn_brain_01.jpg" width="100%" alt="" /></div>
+				<ul>
+					<li><span class="img"><img src="../images/img/brain_hand_img01.jpg" width="100%" alt="" /></span>거담제, 강장제로 사용되며, 잘 놀라면서 가슴이 뛸 때, 가래 섞인 기침을 할 때, 건망증에 효과적입니다. 진정작용, 최면작용, 강심작용, 가래삭임작용, 용혈작용등의 효과가 있습니다. </li>
+					<li><span class="img"><img src="../images/img/brain_hand_img02.jpg" width="100%" alt="" /></span>습담을 없애고 경락의 흐름을 원환하게 해주고 비위의 습을 제거하고 가슴이 답답한 증상, 동통, 입안의 설태 등을 치료하는 약재입니다. 정신이 혼미하거나 귀가 잘 들리지 않을 때, 눈이 침침하고 머리가 무거울 때 효과적입니다. </li>
+					<li><span class="img"><img src="../images/img/brain_hand_img03.jpg" width="100%" alt="" /></span>가슴두근거림, 건망증, 유정, 배와 전신이 붓는 증상에 사용되며, 이뇨, 향균작용, 장관이완작용, 궤양에방효과, 혈당강화작용, 김장수축증가, 면역증강작용, 항종양작용 등의 효과를 지닙니다.</li>
+				<ul>
+			</div>
+
+
+			
+			<p class="first_tit pt16"><span class="ico"><img src="../images/bul/bul_first_tit.gif" width="100%" alt="" /></span>수전증 치료</p>
+			<dl class="square-list">
+				<dt>
+					<span class="ico"><img src="../images/bul/bul_square_1.gif" width="100%" alt="1"></span>
+					침과 부항
+				</dt>
+				<dd>
+					원인에 따라 본태성 수전증일 때는 침치료를 통해 뇌와 신경계를 안정시켜주며, 파킨슨 병의 경우 뇌기능을 활성화 시켜주며, 스트레스가 원인인 경우는 심장의 기능을 강화시켜주는 침 치료를 하게 됩니다. 오장육부의 허와 실을 진단하여 예를 들어 심이 허한 경우에는 심을 보하는 침시술을 하고, 동시에 해당 장부 부위에 부항치료를 합니다. 
+
+				</dd>
+				<dt>
+					<span class="ico"><img src="../images/bul/bul_square_2.gif" width="100%" alt="2"></span>
+					경락자극 및 언어자극 요법
+				</dt>
+				<dd>
+					근력검사를 통해 경락을 통한 스트레스의 종류를 찾고 해당 경락을 자극하면서 언어자극을 동시에 시행하여 감정적인 문제로 인한 수전증을 효과적으로 치료합니다. </dd>
+			</dl>
+			
+
+		</div>
+		<!-- //Content Start -->
+
+		
+
+    </div>
+    <!-- //contents -->
+
+    <!-- footer -->
+    <div id="footer">
+        <div class="box-Fselect">
+			<ul class="foot-info">
+				<li class="ml0"><a href="#none">병원소개</a></li>
+				<li><a href="#none">이용약관</a></li>
+				<li><a href="#none">개인정보취급방침</a></li>
+				<li class="bgNone"><a href="#none">이메일집단수집거부</a></li>
+			</ul>
+
+            <ul class="sns">
+                <li><a href="#none"><img src="../images/btn/btn_f.jpg" alt=""></a></li>
+                <li><a href="#none"><img src="../images/btn/btn_t.jpg" alt=""></a></li>
+                <li><a href="#none"><img src="../images/btn/btn_y.jpg" alt=""></a></li>
+                <li><a href="#none"><img src="../images/btn/btn_b.jpg" alt=""></a></li>
+            </ul>
+            <div class="select">
+                <select>
+                    <option>패밀리 사이트</option>
+                    <option>패밀리 사이트</option>
+                    <option>패밀리 사이트</option>
+                    <option>패밀리 사이트</option>
+                    <option>패밀리 사이트</option>
+                </select>
+            </div>
+
+
+			<!-- pc, 테블릿 address -->
+			<p class="address">
+				<span class="mobile">상호명 : 광동한방병원</span>   소재지 : 서울시 강남구 161번지 가산의료제단 광동한방병원   <span class="mobile">사업자등록번호 : 120-82-02521   <span class="tablet">대표자 : 이강남</span></span>
+				<span class="pc">TEL : 02-2222-4888   FAX : 02-2222-4811, 4899</span>
+				<span class="mobile">COPYRIGHTS (C)  2013 by kwangdong. ALL RIGHTS RESERVED.</span>
+			</p>
+
+		</div>
+       
+        <a href="#none" class="btn-topMv"><img src="../images/btn/btn_top.png" alt="문서 상단 이동"></a>
+    </div>
+    <!-- //footer -->
+    <!-- footer-nav -->
+    <div class="footer-nav">
+        <ul>
+            <li>
+                <a hef="#none">
+                    <span class="bl"><img src="../images/bul/bul_footerNav_1.png" alt=""></span>
+                    <img src="../images/nav/nav_footer_1.png" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="#none">
+                    <span class="bl"><img src="../images/bul/bul_footerNav_2.png" alt=""></span>
+                    <img src="../images/nav/nav_footer_2.png" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="#none">
+                    <span class="bl"><img src="../images/bul/bul_footerNav_3.png" alt=""></span>
+                    <img src="../images/nav/nav_footer_3.png" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="#none">
+                    <span class="bl"><img src="../images/bul/bul_footerNav_4.png" alt=""></span>
+                    <img src="../images/nav/nav_footer_4.png" alt="">
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- //footer-nav -->
+</div>
+
+</body>
+</html>

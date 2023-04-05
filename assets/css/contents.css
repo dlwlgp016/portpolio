@@ -1,0 +1,10 @@
+.section {
+    background: rgb(187, 156, 156);
+    height: calc(100vh - 56px);
+}
+.navbar-brand:hover img {
+    transform: rotate(360deg);
+    transition: all;
+    transition-duration: 1s;
+    transition-timing-function: cubic-bezier(0.680, -0.550, 0.265, 1.550); /* easeInOutBack */
+}
